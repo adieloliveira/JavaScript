@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>T�tulo da p�gina</title>
+		<link href="meucss.css" rel="stylesheet" type="text/css" />
+				
+	</head>
+	<body>
+		<table class="aula14_tabela01">
+			<thead>
+				<tr class="trPar">
+					<td colspan="4" >Calculadora</td>
+				</tr>
+			</thead>
+			
+			
+				<tr>
+					<td colspan="4"><input type="text" class="componente" id="resultado"></td>
+				</tr>
+				
+				<tr class="trPar">
+					<td name="cell7" id="cell_7" onclick="Validar('bt7')" text-align="center">7</td>
+					<td name="cell8" id="cell_8" onclick="Validar('bt8')" text-align="center">8</td>
+					<td name="cell9" id="cell_9" onclick="Validar('bt9')" text-align="center">9</td>
+					<td name="cellmut" id="cell_mut" onclick="Operacao('mut')" text-align="center">x</td>
+				</tr>
+				<tr>
+					<td name="cell4" id="cell_4" onclick="Validar('bt4')" text-align="center">4</td>
+					<td name="cell5" id="cell_5" onclick="Validar('bt5')" text-align="center">5</td>
+					<td name="cell6" id="cell_6" onclick="Validar('bt6')" text-align="center">6</td>
+					<td name="cellsub" id="cell_sub" onclick="Operacao('sub')" text-align="center">-</td>
+				</tr>
+				<tr class="trPar">
+					<td name="cell1" id="cell_1" onclick="Validar('bt1')" text-align="center">1</td>
+					<td name="cell2" id="cell_2" onclick="Validar('bt2')" text-align="center">2</td>
+					<td name="cell3" id="cell_3" onclick="Validar('bt3')" text-align="center">3</td>
+					<td name="cellsom" id="cell_som" onclick="Operacao('som')"   text-align="center">+</td>
+				</tr>
+				<tr>
+					<td name="celldiv" id="cell_div" onclick="Operacao('div')" text-align="center">/</td>
+					<td name="cell0" id="cell_0" onclick="Validar('bt0')" text-align="center">0</td>
+					<td name="cellcalc" id="cell_calc" onclick="Calcular()" text-align="center">=</td>
+					<td name="celllimpa" id="cell_limpa" onclick="Limpar()" >Limpar</td>
+				</tr>
+			
+			</form>
+		</table>
+		<script src="calculadora.js"></script>
+	</body>
+</html>
